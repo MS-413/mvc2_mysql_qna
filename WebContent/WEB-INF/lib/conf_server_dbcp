@@ -1,0 +1,10 @@
+-- tomcat server/ context.xml ¼³Á¤ for dbcp
+
+    <Resource name="dbcp/mysql" autho="Container"
+    type="javax.sql.DataSource"
+    username="jspuser" password="mysql"
+    driverClassName="com.mysql.jdbc.Driver"
+    url="jdbc:mysql://localhost:3306/jsp_db?serverTimezone=UTC"
+    maxTotal="100" maxIdle="30" maxWiathMillis="10000"
+    />
+</ConText>
